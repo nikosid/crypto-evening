@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width">
     <link rel="icon" href="favicon/favicon.ico">
 	<link rel="icon" type="image/png" href="favicon/favicon.png">
-	<link rel="stylesheet" href="style.css?v=2022081501">
+	<link rel="stylesheet" href="style.css?v=20220815001">
 </head>
 <body>
 <section class="block-1">
@@ -276,6 +276,27 @@
 		</div>
 	</div>
 </section>
+<section id="main2" class="pop-up">
+	<div class="pop-up_block">
+		<span id="pop_close" class="pop-up_block_close"></span>
+		<div class="pop-up_block_ttl">Стать партнёром</div>
+		<form action="mail.php" method="get" onsubmit="return validate()">
+			<input type="text" name="Name" minlength="3" placeholder="Ваше имя" required>
+			<input type="text" name="Email" minlength="4" placeholder="Email" required>
+			<input type="text" name="Telegram/WhatsApp" minlength="5" placeholder="Telegram/WhatsApp" required>
+			<button type="submit" id="send-form">Оставить заявку</button>
+		</form>
+		<div class="pop-up_block_info">Нажимая на кнопку, Вы даёте согласие на обработку персональных данных и соглашаетесь с <a href="https://pro-blockchain.com/privacy-policy" target="_blank">Политикой конфиденциальности</a></div>
+	</div>
+	<div class="pop-up_block block-result">
+		<span id="pop_close2" class="pop-up_block_close"></span>
+		<div class="pop-up_block_result">
+			<img src="img/ok.svg">
+			<div>Ваша заявка<br>отправлена</div>
+			<span>Наш специалист свяжется <br>с Вами в ближайшее рабочее время</span>
+		</div>
+	</div>
+</section>
 <footer>
 	<div class="wrp">
 		<div class="foot_l">
@@ -303,7 +324,7 @@
 		</div>
 	</div>
 </footer>
-<script src="main.js"></script>
+<script src="main.js?v=20220815001"></script>
 <!-- slider-->
 <link rel="stylesheet" type="text/css" href="slick/slick.css">
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
