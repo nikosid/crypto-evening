@@ -28,11 +28,15 @@
 	}
 	document.getElementById('pop_close').onclick = function() {
 		document.getElementById('main').classList.remove('pop-open');
+	}
+	document.getElementById('pop_close3').onclick = function() {
 		document.getElementById('main2').classList.remove('pop-open');
 	}
 	document.getElementById('pop_close2').onclick = function() {
 		document.getElementById('main').classList.remove('pop-result');
 		document.getElementById('main').classList.remove('pop-open');
+	}
+	document.getElementById('pop_close4').onclick = function() {
 		document.getElementById('main2').classList.remove('pop-result');
 		document.getElementById('main2').classList.remove('pop-open');
 	}
