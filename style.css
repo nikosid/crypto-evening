@@ -477,6 +477,7 @@ body {
     font-size: 32px;
     line-height: 120%;
     color: #A959AB;
+    max-width: 315px;
 }
 .block-6_top_r {
     max-width: 275px;
@@ -559,11 +560,13 @@ body {
 .block-6_down_bl ul li {
     margin-bottom: 10px;
 }
-.block-6_top_l_down span {
+.kol-mest {
     font-weight: 400;
     font-size: 22px;
     line-height: 26.4px;
-    margin-left: 10px;
+    margin-bottom: 4px;
+    display: block;
+    margin-top: -30px;
 }
 .block-6_top_l_down a {
     outline: none;
@@ -588,6 +591,7 @@ d_none {
 }
 .block-6_top_l_down a span {
     border-bottom: 1px solid;
+    margin-left: 10px;
 }
 .block-6_top_l_down a:hover span {
     border-bottom: 0;
@@ -860,6 +864,9 @@ footer .wrp {
     }
     .block-6_down {
         flex-direction: column;
+    }
+    .kol-mest {
+        margin-top: 0;
     }
     .block-6_down_bl {
         width: 100%;
@@ -1137,6 +1144,9 @@ footer .wrp {
         flex-direction: column;
         align-items: flex-start;
     }
+    .block-6_top_l {
+        width: 100%;
+    }
     .block-6_top_l_ttl {
         font-size: 20px;
         line-height: 120%;
@@ -1147,6 +1157,7 @@ footer .wrp {
     }
     .block-6_top_l_down {
         font-size: 28px;
+        max-width: 100%;
     }
     .block-6_top_r {
         max-width: 100%;
@@ -1197,9 +1208,9 @@ footer .wrp {
         font-size: 16px;
         margin: 17px 0 31px 0;
     }
-    .block-6_top_l_down span {
+    .kol-mest {
         font-size: 18px;
-        line-height: 31.2px;
+        line-height: 21.6px;
     }
     .block-6_down .block-6_butt a {
         margin-bottom: 0;
