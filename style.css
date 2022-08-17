@@ -862,6 +862,7 @@ footer .wrp {
     }
     .block-2_desc:after {
         left: 10%;
+        width: 90%;
     }
     .block-6_down {
         flex-direction: column;
@@ -883,6 +884,7 @@ footer .wrp {
 @media screen and (max-width: 1000px) {
     .block-2_desc:after {
         left: 50%;
+        width: 50%;
     }
     .block-4_down {
         flex-direction: column;
