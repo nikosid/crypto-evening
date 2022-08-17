@@ -131,7 +131,8 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    display: inline-table;
+    width: 100%;
+    text-align: center;
 }
 .block-2_desc_ttl {
     font-weight: 400;
