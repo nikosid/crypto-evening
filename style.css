@@ -217,7 +217,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 64px;
+    padding: 32px 40px;
     margin-top: 20px;
 }
 .block-4_down:last-child .block-4_down-price {
@@ -239,9 +239,6 @@ body {
 .block-4_down_in span {
     color: #A959AB;
 }
-.block-4_down-dop {
-    width: 177px;
-}
 .block-4_down-dop span {
     border: 2px solid #A959AB;
     border-radius: 40px;
@@ -253,6 +250,7 @@ body {
     display: block;
     text-align: center;
     box-sizing: border-box;
+    width: 177px;
 }
 .block-4_down-price {
     background: #1D1D1D;
@@ -265,6 +263,33 @@ body {
     width: 247px;
     box-sizing: border-box;
     text-align: center;
+}
+.sv-price {
+    color: #A959AB;
+    font-size: 32px;
+    padding: 7px 0 7px 0;
+    line-height: 96%;
+}
+.sv-price span {
+    display: block;
+    font-size: 26px;
+    color: #6A4BBB;
+    position: relative;
+}
+.sv-price span:after {
+    content: '';
+    border-bottom: 3px solid #fff;
+    width: 48%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    right: 0;
+    margin: auto;
+    transform: rotate(-2.24deg);
+}
+.sv-down_in {
+    width: 397px;
 }
 .block-4_down a {
     font-weight: 700;
@@ -914,6 +939,7 @@ footer .wrp {
     .block-4_down-dop span {
         margin-bottom: 14px;
         padding: 22px 47px;
+        width: auto;
     }
     .block-4_down-price {
         margin-bottom: 14px;
@@ -1285,6 +1311,20 @@ footer .wrp {
     }
     .foot_r a {
         margin: 0 12.5px;
+    }
+    .sv-price {
+        padding: 17px 34px 17px 32px;
+    }
+    .sv-price span {
+        display: inline;
+        font-size: 18px;
+        padding-right: 27px;
+    }
+    .sv-price span:after {
+        border-bottom: 2px solid #fff;
+        width: 76%;
+        top: 7px;
+        right: auto;
     }
 }
 @media screen and (max-width: 500px) {
