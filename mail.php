@@ -1,9 +1,13 @@
 <?php
     //Получаем данные из глобальной переменной $_GET, так как мы передаем данные методом GET
-    $theme = $_GET['Theme'];
-    $name = $_GET['Name']; // Вытаскиваем имя в переменную
-    $email = $_GET['Email']; // Вытаскиваем почту в переменную
-    $tell = $_GET['Telegram/WhatsApp'];
+    $theme = $_GET['Theme'] ?? '';
+    $name = $_GET['Name'] ?? ''; // Вытаскиваем имя в переменную
+    $email = $_GET['Email'] ?? ''; // Вытаскиваем почту в переменную
+    $tell = $_GET['Telegram/WhatsApp'] ?? '';
+    if ($name === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || $tell === '') {
+        http_response_code(400);
+        exit('Invalid form data');
+    }
     $message = "Форма обратной связи<br> Заявка на: $theme<br> Имя: $name<br> Почта: $email<br> Telegram/WhatsApp: $tell"; // Формируем сообщение, отправляемое на почту
     $to = "gptvinccorp@gmail.com, orenlr56@yandex.ru"; // Задаем получателя письма
     $from = "Invest crypto evening"; // От кого пришло письмо
